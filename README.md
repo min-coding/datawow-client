@@ -1,27 +1,24 @@
-# React + TypeScript + Vite
+## Getting Started
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Follow these steps to set up and run the application:
 
-Currently, two official plugins are available:
+1. Clone and Start the Backend Server:
+   - Clone the JSON server repository: [https://github.com/datawowio/todos-json-server]
+   - Follow the instructions in the repository to start the JSON server.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+2. Clone and Start the Frontend Dev Environment:
+   - Clone this repository: [https://github.com/min-coding/datawow-client.git]
+   - Install dependencies: `npm install`
+   - Start the development environment: `npm run dev`
 
-## Expanding the ESLint configuration
+3. Create a Build:
+   - If you're ready to deploy your application, you can create a production build:
+     ```
+     npm run build
+     ```
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-   parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-   },
-```
-
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+4. Run in Production:
+   - After creating a build, you can preview your application in a production environment:
+     ```
+     npm run preview
+     ```
